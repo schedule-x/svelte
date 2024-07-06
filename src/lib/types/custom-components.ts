@@ -16,10 +16,10 @@ export type CustomComponents = {
 	monthGridEvent?: MonthGridEvent;
 	monthAgendaEvent?: MonthAgendaEvent;
 	eventModal?: EventModal;
-	headerContentLeftPrepend?: typeof SvelteComponent<never>;
-	headerContentLeftAppend?: typeof SvelteComponent<never>;
-	headerContentRightPrepend?: typeof SvelteComponent<never>;
-	headerContentRightAppend?: typeof SvelteComponent<never>;
+	headerContentLeftPrepend?: typeof SvelteComponent<{ [x: string]: never }>;
+	headerContentLeftAppend?: typeof SvelteComponent<{ [x: string]: never }>;
+	headerContentRightPrepend?: typeof SvelteComponent<{ [x: string]: never }>;
+	headerContentRightAppend?: typeof SvelteComponent<{ [x: string]: never }>;
 };
 export type CustomComponentMeta = {
 	Component: SvelteComponent;
