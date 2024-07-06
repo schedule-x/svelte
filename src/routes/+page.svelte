@@ -2,6 +2,7 @@
 	import '@schedule-x/theme-default/dist/index.css';
 	import ScheduleXCalendar from '../lib/components/schedule-x-calendar.svelte';
 	import TimeGridEvent from './components/time-grid-event.svelte';
+	import LeftHeaderPrepend from './components/left-header-prepend.svelte';
 	import { createCalendar, viewDay, viewWeek } from '@schedule-x/calendar';
 
 	const calendarApp = createCalendar({
@@ -41,7 +42,6 @@
 	<ScheduleXCalendar
 		{calendarApp}
 		timeGridEvent={TimeGridEvent}
-		monthGridEvent={TimeGridEvent}
-		dateGridEvent={TimeGridEvent}
+		headerContentLeftPrepend={LeftHeaderPrepend}
 	/>
 </div>
