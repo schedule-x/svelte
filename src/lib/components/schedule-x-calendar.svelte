@@ -1,23 +1,27 @@
 <script lang="ts">
-	import { onMount, type SvelteComponent } from 'svelte';
+	import { onMount } from 'svelte';
 	import { randomStringId } from '$lib/utils/random-string-id.js';
 	import { createCustomComponentFn } from '$lib/utils/create-custom-component-fn.js';
 	import Portal from '$lib/utils/Portal.svelte';
 
-	import type { CustomComponentMeta } from '$lib/types/custom-components.js';
+	import type { CustomComponentMeta, CustomComponents } from '$lib/types/custom-components.js';
 	import type { CalendarApp } from '@schedule-x/calendar';
 
 	export let calendarApp: CalendarApp;
 
-	export let timeGridEvent: SvelteComponent | undefined = undefined;
-	export let dateGridEvent: SvelteComponent | undefined = undefined;
-	export let monthGridEvent: SvelteComponent | undefined = undefined;
-	export let monthAgendaEvent: SvelteComponent | undefined = undefined;
-	export let eventModal: SvelteComponent | undefined = undefined;
-	export let headerContentLeftPrepend: SvelteComponent | undefined = undefined;
-	export let headerContentLeftAppend: SvelteComponent | undefined = undefined;
-	export let headerContentRightPrepend: SvelteComponent | undefined = undefined;
-	export let headerContentRightAppend: SvelteComponent | undefined = undefined;
+	export let timeGridEvent: CustomComponents['timeGridEvent'] | undefined = undefined;
+	export let dateGridEvent: CustomComponents['dateGridEvent'] | undefined = undefined;
+	export let monthGridEvent: CustomComponents['monthGridEvent'] | undefined = undefined;
+	export let monthAgendaEvent: CustomComponents['monthAgendaEvent'] | undefined = undefined;
+	export let eventModal: CustomComponents['eventModal'] | undefined = undefined;
+	export let headerContentLeftPrepend: CustomComponents['headerContentLeftPrepend'] | undefined =
+		undefined;
+	export let headerContentLeftAppend: CustomComponents['headerContentLeftAppend'] | undefined =
+		undefined;
+	export let headerContentRightPrepend: CustomComponents['headerContentRightPrepend'] | undefined =
+		undefined;
+	export let headerContentRightAppend: CustomComponents['headerContentRightAppend'] | undefined =
+		undefined;
 
 	let customComponentsMeta: CustomComponentMeta[] = [];
 
@@ -37,7 +41,10 @@
 	};
 
 	const setCustomComponentFns = () => {
-		const customComponentsAvailable = [
+		const customComponentsAvailable: {
+			name: keyof CustomComponents;
+			component: CustomComponents[keyof CustomComponents];
+		}[] = [
 			{ name: 'timeGridEvent', component: timeGridEvent },
 			{ name: 'dateGridEvent', component: dateGridEvent },
 			{ name: 'monthGridEvent', component: monthGridEvent },
@@ -51,6 +58,8 @@
 
 		customComponentsAvailable.forEach(({ name, component }) => {
 			if (component) {
+				// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+				// @ts-ignore
 				calendarApp._setCustomComponentFn(name, createCustomComponentFn(setComponent, component));
 			}
 		});

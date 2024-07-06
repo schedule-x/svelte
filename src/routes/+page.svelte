@@ -38,10 +38,5 @@
 </script>
 
 <div>
-	<ScheduleXCalendar
-		{calendarApp}
-		timeGridEvent={TimeGridEvent}
-		monthGridEvent={TimeGridEvent}
-		dateGridEvent={TimeGridEvent}
-	/>
+	<ScheduleXCalendar {calendarApp} timeGridEvent={TimeGridEvent} />
 </div>
