@@ -6,10 +6,10 @@ export const createCustomComponentFn =
 		setCustomComponent: (component: CustomComponentMeta) => void,
 		customComponent: SvelteComponent
 	) =>
-		(wrapperElement: HTMLElement, props: Record<string, unknown>) => {
-			setCustomComponent({
-				Component: customComponent,
-				wrapperElement,
-				props
-			})
-		}
+	(wrapperElement: HTMLElement, props: Record<string, unknown>) => {
+		setCustomComponent({
+			Component: customComponent,
+			wrapperElement,
+			props
+		});
+	};
