@@ -1,12 +1,12 @@
-<div class="custom-time-grid-event">
-	<p style="margin: 0;">{calendarEvent.title}</p>
-</div>
-
 <script lang="ts">
 	import type { CalendarEvent } from '@schedule-x/calendar';
 
-	export let calendarEvent: CalendarEvent
+	export let calendarEvent: CalendarEvent;
 </script>
+
+<div class="custom-time-grid-event">
+	<p style="margin: 0;">{calendarEvent.title}</p>
+</div>
 
 <style>
 	.custom-time-grid-event {
