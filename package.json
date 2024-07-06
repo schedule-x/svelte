@@ -12,6 +12,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test": "vitest",
 		"lint": "prettier --check . && eslint . --fix",
+		"lint:ci": "eslint .",
 		"format": "prettier --write .",
 		"prepare": "husky"
 	},
@@ -58,5 +59,15 @@
 	"type": "module",
 	"dependencies": {
 		"svelte-portal": "^2.2.1"
-	}
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"keywords": [
+		"calendar",
+		"event-calendar",
+		"svelte",
+		"dark-mode",
+		"responsive"
+	]
 }
