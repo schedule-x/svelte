@@ -60,9 +60,6 @@
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"type": "module",
-	"dependencies": {
-		"svelte-portal": "^2.2.1"
-	},
 	"publishConfig": {
 		"access": "public"
 	},
