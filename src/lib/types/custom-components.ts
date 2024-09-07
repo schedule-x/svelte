@@ -20,6 +20,7 @@ export type CustomComponents = {
 	headerContentLeftAppend?: typeof SvelteComponent<{ [x: string]: never }>;
 	headerContentRightPrepend?: typeof SvelteComponent<{ [x: string]: never }>;
 	headerContentRightAppend?: typeof SvelteComponent<{ [x: string]: never }>;
+	headerContent?: typeof SvelteComponent<{ [x: string]: never }>;
 };
 export type CustomComponentMeta = {
 	Component: SvelteComponent;

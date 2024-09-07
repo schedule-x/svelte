@@ -22,6 +22,7 @@
 		undefined;
 	export let headerContentRightAppend: CustomComponents['headerContentRightAppend'] | undefined =
 		undefined;
+	export let headerContent: CustomComponents['headerContent'] | undefined = undefined;
 
 	let customComponentsMeta: CustomComponentMeta[] = [];
 
@@ -53,7 +54,8 @@
 			{ name: 'headerContentLeftPrepend', component: headerContentLeftPrepend },
 			{ name: 'headerContentLeftAppend', component: headerContentLeftAppend },
 			{ name: 'headerContentRightPrepend', component: headerContentRightPrepend },
-			{ name: 'headerContentRightAppend', component: headerContentRightAppend }
+			{ name: 'headerContentRightAppend', component: headerContentRightAppend },
+			{ name: 'headerContent', component: headerContent }
 		];
 
 		customComponentsAvailable.forEach(({ name, component }) => {
