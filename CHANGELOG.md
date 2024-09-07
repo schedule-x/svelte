@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.12.0](https://github.com/schedule-x/svelte/compare/v1.11.0...v1.12.0) (2024-09-07)
+
+
+### Features
+
+* header component ([#29](https://github.com/schedule-x/svelte/issues/29)) ([1ed024d](https://github.com/schedule-x/svelte/commit/1ed024d6113dc06f8ee085855fa9ceef3891a974))
+
 # [1.11.0](https://github.com/schedule-x/svelte/compare/v1.10.1...v1.11.0) (2024-09-04)
 
 ### Features
