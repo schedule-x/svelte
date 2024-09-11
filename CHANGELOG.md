@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.13.0](https://github.com/schedule-x/svelte/compare/v1.12.0...v1.13.0) (2024-09-11)
+
+
+### Features
+
+* update dependency @schedule-x/theme-default to v1.63.0 ([#28](https://github.com/schedule-x/svelte/issues/28)) ([2abbe30](https://github.com/schedule-x/svelte/commit/2abbe30b757c5858197101617adda839e1b88124))
+
 # [1.12.0](https://github.com/schedule-x/svelte/compare/v1.11.0...v1.12.0) (2024-09-07)
 
 
