@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/schedule-x/svelte/compare/v1.13.0...v2.0.0) (2024-09-23)
+
+
+### Features
+
+* update schedule-x monorepo packages to v2 (major) ([#31](https://github.com/schedule-x/svelte/issues/31)) ([3188a2f](https://github.com/schedule-x/svelte/commit/3188a2f0687d9f7ac3b83230770ceff886adbc36))
+
+
+### BREAKING CHANGES
+
+* v2 works only with plugins from v2
+
 # [1.13.0](https://github.com/schedule-x/svelte/compare/v1.12.0...v1.13.0) (2024-09-11)
 
 
