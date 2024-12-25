@@ -4,43 +4,37 @@ All notable changes to this project will be documented in this file. See [Conven
 
 # [2.1.0](https://github.com/schedule-x/svelte/compare/v2.0.1...v2.1.0) (2024-11-25)
 
-
 ### Features
 
-* update dependency @schedule-x/theme-default to v2.7.0 ([#35](https://github.com/schedule-x/svelte/issues/35)) ([a3bf653](https://github.com/schedule-x/svelte/commit/a3bf65307a16a5d30218b28f6c79d768be2e865b))
+- update dependency @schedule-x/theme-default to v2.7.0 ([#35](https://github.com/schedule-x/svelte/issues/35)) ([a3bf653](https://github.com/schedule-x/svelte/commit/a3bf65307a16a5d30218b28f6c79d768be2e865b))
 
 ## [2.0.1](https://github.com/schedule-x/svelte/compare/v2.0.0...v2.0.1) (2024-10-01)
 
-
 ### Bug Fixes
 
-* update dependency @schedule-x/theme-default to v2.2.1 ([#33](https://github.com/schedule-x/svelte/issues/33)) ([a8be8df](https://github.com/schedule-x/svelte/commit/a8be8df1ce7aa8d9bfedccf6ba941553128f28db))
+- update dependency @schedule-x/theme-default to v2.2.1 ([#33](https://github.com/schedule-x/svelte/issues/33)) ([a8be8df](https://github.com/schedule-x/svelte/commit/a8be8df1ce7aa8d9bfedccf6ba941553128f28db))
 
 # [2.0.0](https://github.com/schedule-x/svelte/compare/v1.13.0...v2.0.0) (2024-09-23)
 
-
 ### Features
 
-* update schedule-x monorepo packages to v2 (major) ([#31](https://github.com/schedule-x/svelte/issues/31)) ([3188a2f](https://github.com/schedule-x/svelte/commit/3188a2f0687d9f7ac3b83230770ceff886adbc36))
-
+- update schedule-x monorepo packages to v2 (major) ([#31](https://github.com/schedule-x/svelte/issues/31)) ([3188a2f](https://github.com/schedule-x/svelte/commit/3188a2f0687d9f7ac3b83230770ceff886adbc36))
 
 ### BREAKING CHANGES
 
-* v2 works only with plugins from v2
+- v2 works only with plugins from v2
 
 # [1.13.0](https://github.com/schedule-x/svelte/compare/v1.12.0...v1.13.0) (2024-09-11)
 
-
 ### Features
 
-* update dependency @schedule-x/theme-default to v1.63.0 ([#28](https://github.com/schedule-x/svelte/issues/28)) ([2abbe30](https://github.com/schedule-x/svelte/commit/2abbe30b757c5858197101617adda839e1b88124))
+- update dependency @schedule-x/theme-default to v1.63.0 ([#28](https://github.com/schedule-x/svelte/issues/28)) ([2abbe30](https://github.com/schedule-x/svelte/commit/2abbe30b757c5858197101617adda839e1b88124))
 
 # [1.12.0](https://github.com/schedule-x/svelte/compare/v1.11.0...v1.12.0) (2024-09-07)
 
-
 ### Features
 
-* header component ([#29](https://github.com/schedule-x/svelte/issues/29)) ([1ed024d](https://github.com/schedule-x/svelte/commit/1ed024d6113dc06f8ee085855fa9ceef3891a974))
+- header component ([#29](https://github.com/schedule-x/svelte/issues/29)) ([1ed024d](https://github.com/schedule-x/svelte/commit/1ed024d6113dc06f8ee085855fa9ceef3891a974))
 
 # [1.11.0](https://github.com/schedule-x/svelte/compare/v1.10.1...v1.11.0) (2024-09-04)
 
