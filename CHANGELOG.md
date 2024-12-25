@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/schedule-x/svelte/compare/v2.1.0...v2.2.0) (2024-12-25)
+
+
+### Features
+
+* support svelte 5 ([#43](https://github.com/schedule-x/svelte/issues/43)) ([b6923fa](https://github.com/schedule-x/svelte/commit/b6923fa396233bbe5b7196bd1ddfccf7b2d6c4d7))
+
 # [2.1.0](https://github.com/schedule-x/svelte/compare/v2.0.1...v2.1.0) (2024-11-25)
 
 ### Features
