@@ -81,7 +81,7 @@
 </script>
 
 <div>
-	<div class="sx-svelte-calendar-wrapper" id={wrapperId} />
+	<div class="sx-svelte-calendar-wrapper" id={wrapperId}></div>
 
 	{#each customComponentsMeta as customComponent}
 		{#if customComponent.Component}
