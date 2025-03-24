@@ -32,16 +32,15 @@
 		});
 	};
 
-	$: if (calendarApp) {
-		setCustomComponentFns();
-	}
-
 	onMount(() => {
 		const wrapper = document.getElementById(wrapperId);
 		if (!(wrapper instanceof HTMLElement)) {
 			console.warn('Could not find wrapper element to mount calendar on');
 			return;
 		}
+
+		setCustomComponentFns();
+
 		calendarApp.render(wrapper);
 	});
 </script>
