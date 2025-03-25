@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/schedule-x/svelte/compare/v2.2.0...v2.3.0) (2025-03-25)
+
+### Features
+
+- dynamic custom components ([#54](https://github.com/schedule-x/svelte/issues/54)) ([a0a4751](https://github.com/schedule-x/svelte/commit/a0a4751fa11b56635bc6d4e3115998d77d22efd1))
+
 # [2.2.0](https://github.com/schedule-x/svelte/compare/v2.1.0...v2.2.0) (2024-12-25)
 
 ### Features
