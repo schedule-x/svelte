@@ -4,7 +4,7 @@ import type { SvelteComponent } from 'svelte';
 export const createCustomComponentFn =
 	(
 		setCustomComponent: (component: CustomComponentMeta) => void,
-		customComponent: SvelteComponent
+		customComponent: typeof SvelteComponent
 	) =>
 	(wrapperElement: HTMLElement, props: Record<string, unknown>) => {
 		setCustomComponent({

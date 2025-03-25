@@ -28,17 +28,18 @@
 		"!dist/**/*.spec.*"
 	],
 	"peerDependencies": {
-		"@schedule-x/calendar": "^2.0.0",
+		"@schedule-x/calendar": "^2.23.0",
+		"@schedule-x/shared": "^2.23.0",
 		"svelte": "^4 || ^5"
 	},
 	"devDependencies": {
-		"@schedule-x/theme-default": "^2.0.0",
+		"@schedule-x/theme-default": "^2.18.0",
 		"@semantic-release/changelog": "^6.0.3",
 		"@semantic-release/git": "^10.0.1",
-		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/adapter-auto": "^3.3.1",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/package": "^2.0.0",
-		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"@sveltejs/vite-plugin-svelte": "^4.0.0",
 		"@types/eslint": "^9.0.0",
 		"eslint": "^9.0.0",
 		"eslint-config-prettier": "^9.1.0",

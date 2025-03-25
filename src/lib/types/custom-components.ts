@@ -1,30 +1,18 @@
 import type { SvelteComponent } from 'svelte';
-import type { CalendarEvent } from '@schedule-x/calendar';
+import type { CustomComponentName } from '@schedule-x/shared';
 
-type TimeGridEvent = typeof SvelteComponent<{ calendarEvent: CalendarEvent }>;
-type DateGridEvent = typeof SvelteComponent<{ calendarEvent: CalendarEvent }>;
-type MonthGridEvent = typeof SvelteComponent<{
-	calendarEvent: CalendarEvent;
-	hasStartDate: boolean;
-}>;
-type MonthAgendaEvent = typeof SvelteComponent<{ calendarEvent: CalendarEvent }>;
-type EventModal = typeof SvelteComponent<{ calendarEvent: CalendarEvent }>;
+type ComponentType<Props extends Record<string, unknown> = Record<string, unknown>> = new (
+	...args: unknown[]
+) => SvelteComponent<Props>;
 
 export type CustomComponents = {
-	timeGridEvent?: TimeGridEvent;
-	dateGridEvent?: DateGridEvent;
-	monthGridEvent?: MonthGridEvent;
-	monthAgendaEvent?: MonthAgendaEvent;
-	eventModal?: EventModal;
-	headerContentLeftPrepend?: typeof SvelteComponent<{ [x: string]: never }>;
-	headerContentLeftAppend?: typeof SvelteComponent<{ [x: string]: never }>;
-	headerContentRightPrepend?: typeof SvelteComponent<{ [x: string]: never }>;
-	headerContentRightAppend?: typeof SvelteComponent<{ [x: string]: never }>;
-	headerContent?: typeof SvelteComponent<{ [x: string]: never }>;
+	[key in CustomComponentName]?: ComponentType;
 };
+
 export type CustomComponentMeta = {
-	Component: SvelteComponent;
+	Component: ComponentType;
 	wrapperElement: HTMLElement;
 	props: Record<string, unknown>;
 };
+
 export type CustomComponentsMeta = CustomComponentMeta[];
