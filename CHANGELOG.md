@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/schedule-x/svelte/compare/v2.3.0...v3.0.0) (2025-08-27)
+
+### Features
+
+- v3 ([#65](https://github.com/schedule-x/svelte/issues/65)) ([bdeef52](https://github.com/schedule-x/svelte/commit/bdeef529759ab134ff4e22adc212ab256270ba97))
+
+### BREAKING CHANGES
+
+- use v3
+
 # [2.3.0](https://github.com/schedule-x/svelte/compare/v2.2.0...v2.3.0) (2025-03-25)
 
 ### Features
